@@ -1,0 +1,33 @@
+.navigation-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navigation-bar__button-block {
+    display: flex;
+}
+
+.navigation-bar__button-block__button {
+    margin-right: 10px;   
+}
+
+@media screen and (max-width: 614px) {
+    .products-list__card {
+      width: 70%;
+    }
+    .navigation-bar__order-info-form__inpnt{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 614px) {
+    .navigation-bar{
+        flex-direction: column;
+    }
+    .navigation-bar__order-info-form{
+        padding: 5px;
+    }
+
+} 

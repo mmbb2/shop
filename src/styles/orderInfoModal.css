@@ -1,0 +1,34 @@
+.order-info-modal__order-item__image{
+    width: 70px;
+    height: 70px;
+}
+
+.order-info-modal__order-item{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.order-info-modal__total-price{
+    margin: 10px;
+}
+
+.order-info-modal__order-item__title{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.order-info-modal__order-item__price{
+    margin-left: auto;
+}
+
+.order-info-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 24px;
+    padding: 4px;
+}
