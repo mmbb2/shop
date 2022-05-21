@@ -1,9 +1,9 @@
-import axios from 'axios';
+import api from "../http/api";
 
 
 class OrderService {
   static async getOrder(id) {
-    return axios.get(`http://localhost:5000/api/order?orderId=${id}`)
+    return api.get(`/api/order?orderId=${id}`)
       .then((res)=>{
         return res.data
       })

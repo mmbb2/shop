@@ -4,7 +4,7 @@ import { Typography } from '@mui/material'
 export default function OrderInfoModalItem({orderProduct}) {
   return (
     <div className='order-info-modal__order-item'>
-        <img className='order-info-modal__order-item__image' src={`http://localhost:5000/${orderProduct.product.img}`} alt={orderProduct.product.name} />
+        <img className='order-info-modal__order-item__image' src={`${process.env.REACT_APP_API_URL}/${orderProduct.product.img}`} alt={orderProduct.product.name} />
         <div className="order-info-modal__order-item__title">
           <Typography>{orderProduct.product.name}</Typography>
         </div>

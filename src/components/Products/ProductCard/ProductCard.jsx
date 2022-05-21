@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 export default function ProductCard({product}) {
   return (
       <Card className='products-list__card'>
-        <CardMedia component="img" alt="product.name" height="256" image={`http://localhost:5000/${product.img}`}/>
+        <CardMedia component="img" alt="product.name" height="256" image={`${process.env.REACT_APP_API_URL}/${product.img}`}/>
         <CardContent className='products-list__card__card-text'>
           <Typography className='products-list__card__card-text__title' gutterBottom variant="h5" component="div">
             {product.name}

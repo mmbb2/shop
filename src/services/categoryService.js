@@ -1,10 +1,9 @@
-import axios from 'axios';
-
+import api from '../http/api';
 
 class CategoryService {
   static async getCategories() {
 
-    return axios.get(`http://localhost:5000/api/category/`)
+    return api.get(`/api/category/`)
       .then((res)=>{
         return res.data
       })

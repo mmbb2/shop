@@ -21,7 +21,7 @@ export default function CartItem({item, itemData}) {
 
   return (
     <div className='cart-list__cart-item'>
-        <img className='cart-list__cart-item__image' src={`http://localhost:5000/${itemData.img}`} alt={itemData?.name} />
+        <img className='cart-list__cart-item__image' src={`${process.env.REACT_APP_API_URL}/${itemData.img}`} alt={itemData?.name} />
         <div className="cart-list__cart-item__title">
             <Typography variant='h6'>{itemData?.name}</Typography>
         </div>
